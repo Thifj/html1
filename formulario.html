@@ -28,7 +28,7 @@
 
         POST -> envia dados e nao exibe na URL.
       -->
-    <form action="contato.php" method="post">
+    <form action="contato.php" method="post" autocomplete="">
         <!-- 
             Para o click no label selecionar o campo o valor de for e id tem que ser iguais
          -->
@@ -72,6 +72,40 @@
 
         <!-- Input do tipo color -->
         <input type="color" name="corFundo">
+
+        <!-- TEXTAREA, CAMPO PARA TEXTO LONGO, ELE PERMITE QUEBRA DE LINHA -->
+        <textarea name="TEXTO" cols="50" rows="11" placeholder="digite um texto"></textarea>
+
+        <!-- DATA LIST - lista de dados (Pouco usado) -->
+        <input type="text" name="listaDados" list="lista">
+        <datalist id="lista">
+            <option value="item1">Iitem1</option>
+            <option value="item2">Iitem2</option>
+            <option value="item3">Iitem3</option>
+        </datalist>
+
+        <!-- Checkbox lista de dados onde posso marcar varios itens -->
+        <input type="checkbox" name="cores[]" id="vermelho" value="Vermelho" checked> <label
+            for="vermelho">Vermelho</label>
+        <input type="checkbox" name="cores[]" id="amarelo" value="Amarelo"> <label for="amarelo">Amarelo</label>
+        <input type="checkbox" name="cores[]" id="verde" value="Verde"> <label for="verde">Verde</label>
+
+        <!-- radio permite a marcacao de apenas 1 item da lista, desde que o name deles sejam iguais -->
+        <br>
+        <input type="radio" name="liquido" value="agua"> <label for="agua">Agua</label>
+        <input type="radio" name="liquido" value="cerveja"> <label for="cerveja">Cerveja</label>
+        <input type="radio" name="liquido" value="cafe"> <label for="cafe">Cafe</label>
+
+        <br>
+        <label for="">Campo com valor fixo</label>
+        <!-- 
+            value -> preenche um valor padrao
+            required -> marca o campo como obrigatorio
+            readonly -> apenas leitura (o campo é enviado)
+            disable -> desabilita o campo (o campo não é enviado no formulario)
+         -->
+        <input type="text" name="teste1" value="Valor fixo" required readonly>
+        <br>
 
         <!-- Input button submit -->
         <button type="submit">ENVIO COM BUTTON</button>
