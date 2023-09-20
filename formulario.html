@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+
+    <!-- 
+        CRUD
+
+        C-reat -> criar
+        R-eady -> leitura
+        U-pdate -> atualizacao
+        D-elete -> deletar
+     -->
+
+    <!-- 
+        Atributo action -> caminho para onde vai a requisicao e envio de dados preenchidos.
+        
+        method diz o modo de envio das informacoes pelo navegador
+
+        GET -> solicita dados. quando envio, os dados sao exibidos na URL do navegador.
+
+        POST -> envia dados e nao exibe na URL.
+      -->
+    <form action="contato.php" method="post">
+        <!-- 
+            Para o click no label selecionar o campo o valor de for e id tem que ser iguais
+         -->
+        <label for="nomeCompleto">Nome Completo:</label><br>
+        <input type="text" name="nomeCompleto" id="nomeCompleto"><br><br>
+
+        <label for="email">E-mail:</label><br>
+
+        <!-- <input type="" name="email" placeholder="Informe um e-mail valido" id="email"> -->
+
+        <!-- Input para email -->
+        <input type="email" name="email" id="email"><br><br>
+
+        <!-- Campo numerico -->
+        <label for="Numero">Numero</label><br>
+        <input type="number" name="numero" placeholder="Numero"> <br><br>
+
+        <!-- Campo de senha -->
+        <label for="senha">Senha</label><br>
+        <input type="password" name="senha" placeholder="Senha"> <br><br>
+
+        <!-- Campo de enviar 1 arquivo -->
+        <input type="file" name="arquivo"> <br><br>
+
+        <!-- Input para enviar varios arquivos -->
+        <input type="file" name="arquivos" multiple><br><br>
+
+        <!-- Select, lista de dados agrupados -->
+        <select name="estados" required multiple>
+            <option value="">Selecione um estado</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="RS">Rio grande do sul</option>
+            <option value="PR">Parana</option>
+        </select><br><br>
+
+        <!-- Input hidden (escondido) -->
+        <input type="hidden" name="id" value="1223">
+
+        <!-- input para mostrar de imagens -->
+        <input type="image" src="./img/ovelha.png" alt="imagem ovelha"><br>
+
+        <!-- Input do tipo color -->
+        <input type="color" name="corFundo">
+
+        <!-- Input button submit -->
+        <button type="submit">ENVIO COM BUTTON</button>
+
+        <input type="submit" value="ENVIAR">
+    </form>
+
+
+</body>
+
+</html>
