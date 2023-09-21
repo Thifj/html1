@@ -6,4 +6,3 @@ echo "</pre>";
 
 $teste = "";
 $teste2;
-?>
