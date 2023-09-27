@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Open+Sans:ital,wght@0,700;1,400&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap');
 
 * {
     padding: 0;
@@ -6,19 +6,17 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* NAVEGACAO */
-
+/* NAVEGAÇÃO */
 #navegacao {
     width: 100%;
     height: 80px;
-    background-color: rgb(148, 118, 118);
+    background-color: #c1c1c1;
 }
 
 #navegacao .nav-brand {
     display: block;
     float: left;
     padding: 5px;
-
 }
 
 #navegacao ul {
@@ -32,9 +30,8 @@
 #navegacao ul li a {
     display: block;
     padding: 31px 10px;
-    text-transform: uppercase;
     text-decoration: none;
-    font-weight: 700;
+    text-transform: uppercase;
     color: red;
     transition: 0.3s ease-out;
 }
@@ -47,6 +44,7 @@
 /* CONTEUDO */
 main {
     max-width: 1280px;
+    min-height: 70vh;
     margin: 0 auto;
     padding: 50px 0;
 }
@@ -55,6 +53,55 @@ main {
 #destaques article {
     width: 22%;
     display: inline-block;
-    background-color: #ccc;
     margin: 0 1%;
+    vertical-align: top;
+}
+
+#destaques article header h3 {
+    display: inline-block;
+    background-color: red;
+    padding: 4px 8px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+#destaques article div.content {
+    min-height: 300px;
+    background-color: #fff;
+    box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+#destaques article div.title {
+    min-height: 100px;
+}
+
+#destaques article div.action {
+    padding: 10px 0;
+}
+
+#destaques article img {
+    width: 100%;
+}
+
+#destaques article h4 {
+    padding: 4px 8px;
+    text-align: left;
+}
+
+/* COMPONENTES PADRÕES */
+.btn {
+    display: inline-block;
+    background-color: rgb(223, 131, 94);
+    padding: 8px 25px;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #ccc;
 }
