@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.cambio {
+    width: 600px;
+    background-color: #000;
+    border-spacing: 1px;
+    filter: invert(53);
+}
+
+.cambio td,
+.cambio th {
+    border: 1px solid transparent;
+    /* #ff6600 ex: #f60 */
+    background-color: white;
+    padding: 4px;
+    text-align: center;
+}
+
+.cambio th {
+    background-color: #ccc;
+}
+
+/* regra do cornao (tabela zebrada ou listrada) */
+/* odd - impar ou even -> par */
+.cambio tr:nth-child(even) td {
+    background-color: bisque;
+}
+
+/* .cambio td.left {
+    text-align: left;
+} */
+
+.cambio td:first-of-type {
+    text-align: left;
+}

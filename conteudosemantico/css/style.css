@@ -23,7 +23,7 @@ body {
 
     background: url('./cerveja-min.png');
     background-repeat: repeat-x, repeat-y, no-repeat, round;
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     /* background-blend-mode: luminosity; */
     /* background-color: blue; */
@@ -60,6 +60,7 @@ body {
     ridge -> borda com ressalto
      */
     border: 4px solid transparent;
+    opacity: .5;
 }
 
 div:hover {
@@ -81,4 +82,18 @@ div h1 {
     /* font-style: italic; */
     /* text-decoration: underline; */
     /* text-transform: uppercase; */
+}
+
+/* pai filho */
+.bloco button {
+    padding: 6px;
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.bloco button:hover {
+    border: px ridge;
+    border-color: blue;
 }
